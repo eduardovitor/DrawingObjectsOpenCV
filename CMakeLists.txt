@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(drawing_objects)
+find_package( OpenCV REQUIRED )
+add_executable( drawing_objects drawing_objects.cpp )
+target_link_libraries( drawing_objects ${OpenCV_LIBS} )
